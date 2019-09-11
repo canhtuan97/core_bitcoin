@@ -1,0 +1,32 @@
+
++pivx-cli -regtest getnewaddress
++pivx-cli -regtest generate 1
++pivx-cli -regtest sendtoaddress "address 20"
++pivx-cli -regtest dumpprivkey "address"
+
+port = 51475
+ 
+address 1 = y7qk8CiFmaGxuK7FWTNL18YEj6FVjN9oH8
+address 2 = xxhGSJRKjPtfd2gNdnt11jBEnzgLkXMsTd
+privkey1 = cVRnM6qQE9QY6v9a2NZuqx9EyADxWSTPqMaPcb7RFRTiz2Wa5ecd
+
+tx_id = "d69806bf66d925ed2ec22a6a86e88961dbc3efc900127d57e197a35e1acdeb28"
+------------
+
+Multisignature 
+
+address1 = yDVqg395EdFv7YTHQMioKtkwCysErjCJ6x
+address1 = y9MJZHPPagoRg39aoLLGvuMqpmtvgjRJ47
+address1 = yCQg5cXcyseg3aVq7dnSqqSYp3s4J2RVMF
+
+pivx-cli -regtest validateaddress "yCQg5cXcyseg3aVq7dnSqqSYp3s4J2RVMF"
+
+
+pubkey 1 = "036cc269fc65fa7102a1eb4d07cfa2bdc85b73a9654fea133e9a38dc43689bcaac",
+pubkey 1 = "03be578fd5b97c3eb44cbeb89bedb86b14e47c3b14f54151ffb068230811f23a0c",
+pubkey 1 = "024f9b0b057615618ec83b0557fcb6ea392be540b92f40215fcda59ebb3c723000",
+
+pivx-cli -regtest createmultisig 2 "[\"036cc269fc65fa7102a1eb4d07cfa2bdc85b73a9654fea133e9a38dc43689bcaac\",\"03be578fd5b97c3eb44cbeb89bedb86b14e47c3b14f54151ffb068230811f23a0c\",\"024f9b0b057615618ec83b0557fcb6ea392be540b92f40215fcda59ebb3c723000\"]"
+
+
+addressMutisig = "8naxadB4hxgEMY5qjbgi16f7HmdJZVE9GN",

@@ -1,0 +1,88 @@
+
+
++ bitcoind -regtest -deprecatedrpc=generate
+bitcoin-cli -regtest generate 1
+
+bitcoin-cli -regtest getnewaddress
+ 
+bitcoin-cli -regtest sendtoaddress  "address"  10
+bitcoin
+address1 = 2MxPiYWUJSsgdsaY1xxzMC2KdTFZbnAm4ET  
+privateKey1= cQS2E2BgRk1QCUrGvtZXUMPp1HsutBJqUQH35zMJuxZYW3wiKA7r
+address2 = 2NBrQmzKyVVX94BbhBRLgGETfB5ovXKbhNK
+
+
+txid sau khi send 10 coin tới address1 = "1a254c30af668fe924c77933597928769f5cbca7211b2d042fe49e62f906eaad"
+
+
+
+
+￼
+[
+  {
+    "txid": "0824c6b2dcbf077e3bee91016479ac45054bb3511f13940da7e085880d66a259",
+    "vout": 0,
+    "address": "2Mu9AJNcRzjjsRHVAXMS9QtAxieuWexCRwF",
+    "label": "",
+    "redeemScript": "001400d7b142eb3cab8cad958e2089e100c798d9d2c5",
+    "scriptPubKey": "a91414caad576f87401de516ca2d390b59d6b652487a87",
+    "amount": 10.00000000,
+    "confirmations": 1,
+    "spendable": true,
+    "solvable": true,
+    "desc": "sh(wpkh([b5b67d0a/0'/0'/1']032413cf871fa19fc27c23d9f5a60b501003bef69cc9b32fcf20dba7d36822007d))#xtfu79py",
+    "safe": true
+  },
+  {
+    "txid": "0824c6b2dcbf077e3bee91016479ac45054bb3511f13940da7e085880d66a259",
+    "vout": 1,
+    "address": "2MxzeAWJ1zJfkxWPSFVZfTXkbhK5AoKF1WK",
+    "redeemScript": "0014fc80a24f9e1ba58986f3bcfa326351b89d393724",
+    "scriptPubKey": "a9143f0eb2535fed9be3013c14830e4f5d5db60b90d487",
+    "amount": 39.99996260,
+    "confirmations": 1,
+    "spendable": true,
+    "solvable": true,
+    "desc": "sh(wpkh([b5b67d0a/0'/1'/0']024480e93e59ebc64055cabae9da5c234503457cdf0a133250ad5b514db81a48e3))#yredhn2t",
+    "safe": true
+  },
+  {
+    "txid": "ad8a65d8e4ece6d3926e9ea086b9285c29c916c8e0f4bf726c172551497f107d",
+    "vout": 0,
+    "address": "mtftHFAFBRwAkzJa2u7UhkMXn99ugB6cUh",
+    "scriptPubKey": "210282dc6aa29963fa3f5acfdece0f847914a38760d746701de8fb99fe26ae732a49ac",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "pk([b5b67d0a/0'/0'/0']0282dc6aa29963fa3f5acfdece0f847914a38760d746701de8fb99fe26ae732a49)#pvjujuyd",
+    "safe": true
+  }
+]
+
+
+-------------------
+
+Mutiisig 
+
+address1 = 2MuYCTkkYdqbhkPf8Y4gPavsyqwkmUKatSV
+address2 = 2N67deeDuF16F411B7udn72URTKym4t1bRx
+address3 = 2N87U5GeLzoTgZ9asaz6s4wYm2QLYHE65oH
+
+pubkey1 = a91419260c7cb38c8d45fd338a6c7de90013f00df6e087
+pubkey1 = a9148d2a0f1a9d3c4a9ef3c536a21af2d38fcb26753a87
+pubkey1 = a914a3125143ebff3f95b4b8bb11cf9218e452da3df387
+
+
+createmultisig 2 "["a91419260c7cb38c8d45fd338a6c7de90013f00df6e087","a9148d2a0f1a9d3c4a9ef3c536a21af2d38fcb26753a87","a914a3125143ebff3f95b4b8bb11cf9218e452da3df387"]"
+
+bitcoin-cli createmultisig 2 "[\"a91419260c7cb38c8d45fd338a6c7de90013f00df6e087\",\"a9148d2a0f1a9d3c4a9ef3c536a21af2d38fcb26753a87\",\"a914a3125143ebff3f95b4b8bb11cf9218e452da3df387\"]"
+
+
+createmultisig 2 "[\"a91419260c7cb38c8d45fd338a6c7de90013f00df6e087\",\"a9148d2a0f1a9d3c4a9ef3c536a21af2d38fcb26753a87\",\"a914a3125143ebff3f95b4b8bb11cf9218e452da3df387\"]"
+
+
+
+
+
+
