@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "bitcoind-rpc": "^0.8.1",
     "bitcore-lib": "^8.5.1",
     "bitcore-lib-dash": "^0.15.3",
